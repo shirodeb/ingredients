@@ -6,7 +6,9 @@ Ingredients（构建素材） 是一种尝试解决UOS V20、deepin V20中系统
 
 本项目是[ShiroDEB](https://github.com/shirodeb/shirodeb)的附属项目，仅作为“配置文件”来使用，并无逻辑代码。
 
-每一个 构建素材 均为一个文件夹，文件夹名由包名、版本号、架构三元组构成，并在文件夹内*可选*地存在`base.sh`、`devel.sh`、`runtime.sh`文件，若文件不存在，则相应的值将会采用默认的设置。
+每一个 构建素材 均为一个文件夹，文件夹名由`-`分割的包名、版本号、架构三元组构成，并在文件夹内*可选*地存在`base.sh`、`devel.sh`、`runtime.sh`文件，若文件不存在，则相应的值将会采用默认的设置。
+
+**为保证正确处理相关信息，目前请一定保证文件夹名中包含且仅包含三个`-`，即：packageName-Version-Arch，每部分不得包含`-`字符。Arch须为[Debian规范](https://wiki.debian.org/SupportedArchitectures)的命名**
 
 ## `base.sh`
 `base.sh` 描述一个 构建素材 的基础信息，目前包含以下内容：
