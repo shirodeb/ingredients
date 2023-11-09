@@ -1,3 +1,0 @@
-# NodeJS
-
-With pnpm inside
