@@ -1,0 +1,7 @@
+*
+!.gitignore
+!/*/
+/*/*
+!/*/devel.sh
+!/*/runtime.sh
+!/*/base.sh
